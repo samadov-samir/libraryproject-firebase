@@ -1,0 +1,118 @@
+/*general*/
+
+body {
+  background-color: rgba(255, 250, 246, 255);
+}
+
+.main-bg-color {
+  background-color: rgba(255, 250, 246, 255);
+}
+.footer-bg-color {
+  background-color: rgba(57, 31, 0, 1);
+}
+
+.main-ff {
+  font-family: "Montserrat", sans-serif;
+}
+
+
+/*footer*/
+
+.follow {
+  font-family: "Montserrat";
+  font-weight: 900;
+  font-size: 25px;
+  line-height: 196.19%;
+}
+
+.footer-main {
+  background-color: rgba(57, 31, 0, 1);
+}
+
+.footer-main ul .footer-list-title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 196.19%;
+  color: white;
+}
+.footer-main ul li {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 196.19%;
+  color: white;
+}
+
+.footer-privacy {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 196.19%;
+  color: white;
+}
+
+.footer-list-title {
+  list-style: none;
+}
+.requestCall {
+  background-color: #391F00;
+  width: 136px;
+  height: 40px;
+  border: 1px solid #e16a00;
+  border-radius: 0%;
+  color: #e16a00;
+  font-size: 14px;
+  -webkit-border-radius: 0%;
+  -moz-border-radius: 0%;
+  -ms-border-radius: 0%;
+  -o-border-radius: 0%;
+}
+
+.requestCall:hover {
+  border: 1px solid #e16a00;
+  color: #e16a00;
+}
+.call-number {
+  list-style: none;
+}
+.footer-list-group {
+  list-style: none;
+}
+/* grid */
+@media (max-width: 991.99px) {
+  .footer-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-list-group  {
+    display: none;
+  }
+  .header-actived {
+    color: rgba(225, 106, 0, 1);
+    border-bottom: none;
+  }
+}
+@media (max-width: 770px) {
+  .footer-main ul {
+    text-align: center;
+  }
+  .footer-logo {
+    text-align: center;
+  }
+  .footer-icons img {
+    width: 50px;
+  }
+}
+@media (max-width: 280px) {
+  .footer-icons {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

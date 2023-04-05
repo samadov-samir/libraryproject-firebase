@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/558b0d9e50.js" crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+    <script src="js/script.js" type="module" defer></script>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="dropmenu" >
+            <div class="left">
+                <div class="head">
+                    <div class="info-img">
+                        <div class="img">
+                            <img src="img/Vector2.png" alt="">
+                        </div>
+                        <div class="info">
+                            <div class="name">LIBRARY</div>
+                            <hr>
+                            <p>Admin Panel</p>
+                        </div>
+                    </div>
+                    <div class="space">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </div>
+                <div class="foot">
+                    <ul>
+                        <a href="#addbook">
+                            <li><img src="img/Vector2.png" alt=""><span>Home</span></li>
+                        </a>
+
+                        <a href="#about-store">
+                            <li><img src="img/Vector2.png" alt=""><span>About</span></li>
+                        </a>
+
+                        <a href="#join-us">
+                            <li><img src="img/Vector2.png" alt=""><span>Join Us</span></li>
+                        </a>
+                        <a href="#contact-uss">
+                            <li><img src="img/Vector2.png" alt=""><span>Contact</span></li>
+                        </a>
+
+                        <li class="logOut"><img src="img/Vector2.png" alt=""><span>LogOut</span></li>
+
+
+
+
+                    </ul>
+                </div>
+            </div>
+            <div class="rightt">
+            </div>
+        </div>
+        <div class="shadowDrop"></div>
+        <div class="additional">
+            <div class="head">
+                <div class="img">
+                    <img src="img/Vector.png" alt="">
+                </div>
+                <div class="info">
+                    <div class="name">LIBRARY</div>
+                    <hr>
+                    <p>Admin Pane</p>
+                </div>
+            </div>
+            <div class="right">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="mainpage">
+            <div class="user">
+                <div class="img"><img src="img/Combined Shape.png" alt=""></div>
+                <p>Admin</p>
+            </div>
+            <div class="addbook" id="addbook">
+                <h2>Add book</h2>
+                <form class="searchbook">
+                    <h4>Search book</h4>
+                    <div class="inputSearch">
+                        <input type="text">
+                        <button class="search"><img src="img/Group 244.png" alt="group"></button>
+                    </div>
+                    <div class="history">
+
+                    </div>
+                </form>
+            </div>
+            <div class="book-form">
+                <h2>Book form</h2>
+                <form class="add">
+                    <div class="inputsection">
+                        <label for="bookname">Book Name</label>
+                        <input id="bookname" type="text">
+                    </div>
+                    <div class="inputsection">
+                        <label for="authorname">Author Name</label>
+                        <input id="authorname" type="text">
+                    </div>
+                    <div class="inputsection">
+                        <label for="BookimgUrl">Book Image Url</label>
+                        <input id="BookimgUrl" type="text">
+                    </div>
+                    <div class="inputsection description">
+                        <label for="description">Description</label>
+                        <input id="description" type="text">
+                    </div>
+                    <div class="inputsection">
+                        <label for="booktype">Book Type</label>
+                        <input id="booktype" type="text">
+                    </div>
+                    <button class="addBtn" type="submit">Add</button>
+                </form>
+            </div>
+            <div class="about-store" id="about-store">
+                <h2>About Store</h2>
+                <form class="about-form">
+                    <div class="inputsection">
+                        <label for="title">Title</label>
+                        <input id="title" type="text">
+                    </div>
+                    <div class="inputsection">
+                        <label for="BookimgUrlAbout">Book Image Url</label>
+                        <input id="BookimgUrlAbout" type="text">
+                    </div>
+                    <div class="inputsection description">
+                        <label for="descriptionAbout">Description</label>
+                        <input id="descriptionAbout" type="text">
+                    </div>
+
+                    <button class="addBtn">Add</button>
+                </form>
+            </div>
+            <div class="join-us" id="join-us">
+                <h2>Join Us</h2>
+                <table class="join-us-table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Full Name</th>
+                            <th>Email Address</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="contact-us" id="contact-uss">
+                <h2>Contact Us</h2>
+                <table class="contact-us-table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Full Name</th>
+                            <th>Address</th>
+                            <th>Email Address</th>
+                            <th>Phone Number</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

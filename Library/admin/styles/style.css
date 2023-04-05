@@ -1,0 +1,565 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.container {
+  background: #e5e5e5;
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  display: flex;
+}
+.container .dropmenu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  min-width: 205px;
+  width: 30%;
+  min-height: 100vh;
+  color: white;
+  transition: all 1s !important;
+  opacity: 1;
+  visibility: visible;
+}
+.container .dropmenu .left {
+  padding: 35px;
+  background: #720418;
+  width: 80%;
+}
+.container .dropmenu .left .head {
+  display: flex;
+  margin: auto;
+  width: 100%;
+}
+.container .dropmenu .left .head .space {
+  display: none;
+}
+.container .dropmenu .left .head .info-img {
+  display: flex;
+}
+.container .dropmenu .left .head .info {
+  margin-left: 8px;
+  width: 100%;
+}
+.container .dropmenu .left .head .info .name {
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 17px;
+}
+.container .dropmenu .left .head .info p {
+  font-weight: 400;
+  font-size: 13px;
+}
+.container .dropmenu .left .head .info hr {
+  width: 100%;
+  margin: 5px;
+  margin-left: 0;
+}
+.container .dropmenu .left .head .img {
+  width: 67px;
+}
+.container .dropmenu .left .head .img img {
+  width: 100%;
+}
+.container .dropmenu .left .foot {
+  margin-top: 25px;
+}
+.container .dropmenu .left .foot a {
+  text-decoration: none;
+  color: white;
+  cursor: none;
+}
+.container .dropmenu .left .foot ul {
+  list-style-type: none;
+}
+.container .dropmenu .left .foot ul li {
+  display: flex;
+  align-items: center;
+  padding: 22px 0;
+  padding-left: 22px;
+  border-radius: 50px;
+  transition: background-color 0.8s;
+  cursor: pointer;
+}
+.container .dropmenu .left .foot ul li img {
+  width: 32px;
+}
+.container .dropmenu .left .foot ul li span {
+  margin-left: 12px;
+}
+.container .dropmenu .left .foot ul li:hover {
+  background-color: #48020f;
+}
+.container .dropmenu .rightt {
+  display: none;
+  opacity: 1;
+  height: 100vh;
+  width: 20%;
+  background: rgb(84, 47, 2);
+}
+.container .shadowDrop {
+  min-width: 205px;
+  width: 30%;
+  min-height: 100vh;
+  transition: all 1s !important;
+}
+.container .additional {
+  display: none;
+}
+.container .additional .head {
+  display: flex;
+  margin: auto;
+  width: 50%;
+  color: #720418;
+}
+.container .additional .head .info {
+  margin-left: 8px;
+  width: 100%;
+}
+.container .additional .head .info .name {
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 17px;
+}
+.container .additional .head .info p {
+  font-weight: 400;
+  font-size: 13px;
+}
+.container .additional .head .info hr {
+  width: 100%;
+  margin: 5px;
+  margin-left: 0;
+}
+.container .additional .head .img {
+  width: 67px;
+}
+.container .additional .head .img img {
+  width: 100%;
+}
+.container .additional .right {
+  width: 50%;
+  text-align: right;
+}
+.container .additional .right i {
+  font-size: 30px;
+}
+.container .mainpage {
+  width: 75%;
+  padding: 0 58px;
+}
+.container .mainpage .user {
+  margin-top: 48px;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  right: 0;
+}
+.container .mainpage .user .img {
+  width: 17px;
+}
+.container .mainpage .user .img img {
+  width: 100%;
+}
+.container .mainpage .user p {
+  font-size: 14px;
+  margin-left: 5px;
+}
+.container .mainpage .addbook h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 196.19%;
+}
+.container .mainpage .addbook .searchbook {
+  margin-top: 26px;
+}
+.container .mainpage .addbook .searchbook .inputSearch {
+  display: flex;
+  margin-top: 10px;
+}
+.container .mainpage .addbook .searchbook .inputSearch input {
+  background: #ffffff;
+  border: 2px solid rgba(57, 31, 0, 0.48);
+  border-radius: 34px;
+  max-width: 395px;
+  width: 80%;
+  height: 41px;
+  padding-left: 33px;
+}
+.container .mainpage .addbook .searchbook .inputSearch .search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+  width: 63px;
+  height: 40px;
+  margin-left: 10px;
+  outline: none;
+  border: none;
+  background: #ff8b00;
+  border-radius: 34px;
+  transition: opacity 0.5s;
+  cursor: pointer;
+}
+.container .mainpage .addbook .searchbook .inputSearch .search:hover {
+  opacity: 0.7;
+}
+.container .mainpage .addbook .searchbook .inputSearch .search img {
+  width: 63px;
+  height: 100%;
+}
+.container .mainpage .addbook .searchbook .history {
+  margin-top: 6px;
+  background: #f1f0f0;
+  border-radius: 35px;
+  max-width: 395px;
+  width: 80%;
+  padding: 20px;
+  max-height: 200px;
+  overflow-y: scroll;
+}
+.container .mainpage .addbook .searchbook .history p {
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.container .mainpage .addbook .searchbook .history p img {
+  width: 15px;
+  height: 15px;
+}
+.container .mainpage .addbook .searchbook .history p span {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  color: #bcbcbc;
+  margin-left: 24px;
+}
+.container .mainpage .book-form {
+  margin-top: 81px;
+}
+.container .mainpage .book-form h2 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 196.19%;
+}
+.container .mainpage .book-form .add {
+  padding: 16px 30px 30px;
+  gap: 24px;
+  background: #ffffff;
+  border-radius: 20px;
+  margin-top: 18px;
+}
+.container .mainpage .book-form .add .inputsection {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+}
+.container .mainpage .book-form .add .inputsection label {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 10px;
+}
+.container .mainpage .book-form .add .inputsection input {
+  padding: 8px 12px;
+  height: 40px;
+  background: #ffffff;
+  border: 1px solid #e2e6ee;
+  box-shadow: 0px 4px 18px rgba(158, 168, 189, 0.31);
+  border-radius: 10px;
+}
+.container .mainpage .book-form .add .description input {
+  height: 89px;
+}
+.container .mainpage .book-form .add .addBtn {
+  width: 100%;
+  background: #ff8b00;
+  border-radius: 10px;
+  height: 40px;
+  border: 0;
+  margin-top: 24px;
+  color: white;
+  cursor: pointer;
+  transition: opacity 0.5s;
+}
+.container .mainpage .book-form .add .addBtn:hover {
+  opacity: 0.7;
+}
+.container .mainpage .about-store {
+  margin-top: 167px;
+}
+.container .mainpage .about-store h2 {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 196.19%;
+}
+.container .mainpage .about-store .about-form {
+  padding: 16px 30px 30px;
+  gap: 24px;
+  background: #ffffff;
+  border-radius: 20px;
+  margin-top: 18px;
+}
+.container .mainpage .about-store .about-form .inputsection {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+}
+.container .mainpage .about-store .about-form .inputsection label {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 10px;
+}
+.container .mainpage .about-store .about-form .inputsection input {
+  padding: 8px 12px;
+  height: 40px;
+  background: #ffffff;
+  border: 1px solid #e2e6ee;
+  box-shadow: 0px 4px 18px rgba(158, 168, 189, 0.31);
+  border-radius: 10px;
+}
+.container .mainpage .about-store .about-form .description input {
+  height: 89px;
+}
+.container .mainpage .about-store .about-form .addBtn {
+  width: 100%;
+  background: #ff8b00;
+  border-radius: 10px;
+  height: 40px;
+  border: 0;
+  margin-top: 24px;
+  color: white;
+  cursor: pointer;
+  transition: opacity 0.5s;
+}
+.container .mainpage .about-store .about-form .addBtn:hover {
+  opacity: 0.7;
+}
+.container .mainpage .join-us {
+  width: 60%;
+  margin-top: 167px;
+}
+.container .mainpage .join-us h2 {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 196.19%;
+}
+.container .mainpage .join-us .join-us-table {
+  margin-bottom: 200px;
+  font-family: arial, sans-serif;
+  width: 100%;
+  border: 0;
+}
+.container .mainpage .join-us .join-us-table thead {
+  background-color: #720418;
+  color: #f2f2f2;
+  border: 0;
+}
+.container .mainpage .join-us .join-us-table thead tr th {
+  font-weight: 200 !important;
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-size: 14px;
+  line-height: 115%;
+}
+.container .mainpage .join-us .join-us-table tbody {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 115%;
+}
+.container .mainpage .join-us .join-us-table tbody tr:nth-child(odd) {
+  background-color: #f9fafc;
+}
+.container .mainpage .join-us .join-us-table td,
+.container .mainpage .join-us .join-us-table th {
+  text-align: left;
+  padding: 8px;
+}
+.container .mainpage .contact-us {
+  width: 100%;
+  margin-top: 167px;
+  overflow-x: scroll;
+}
+.container .mainpage .contact-us h2 {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 196.19%;
+}
+.container .mainpage .contact-us .contact-us-table {
+  margin-bottom: 200px;
+  font-family: arial, sans-serif;
+  width: 100%;
+  border: 0;
+  overflow-x: scroll;
+}
+.container .mainpage .contact-us .contact-us-table thead {
+  background-color: #720418;
+  color: #f2f2f2;
+  border: 0;
+}
+.container .mainpage .contact-us .contact-us-table thead tr th {
+  font-weight: 200 !important;
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-size: 14px;
+  line-height: 115%;
+}
+.container .mainpage .contact-us .contact-us-table tbody {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 115%;
+}
+.container .mainpage .contact-us .contact-us-table tbody tr:nth-child(odd) {
+  background-color: #f9fafc;
+}
+.container .mainpage .contact-us .contact-us-table td,
+.container .mainpage .contact-us .contact-us-table th {
+  text-align: left;
+  padding: 8px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+  .container .dropmenu {
+    z-index: 1000;
+    visibility: hidden;
+    height: 0;
+    width: 0px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    opacity: 0;
+  }
+  .container .dropmenu .left {
+    z-index: 1000;
+  }
+  .container .dropmenu .left .head .space {
+    display: block;
+  }
+  .container .dropmenu .rightt {
+    display: block;
+  }
+  .container .dropmenu .head {
+    display: flex;
+    align-items: center;
+  }
+  .container .dropmenu .head .space {
+    display: block;
+    margin-left: auto;
+  }
+  .container .dropmenu .head .space i {
+    font-size: 30px;
+  }
+  .container .hambmin {
+    width: 100% !important;
+    height: 100vh !important;
+    visibility: visible !important;
+    transition: all 1s !important;
+    opacity: 1 !important;
+    z-index: 1000;
+  }
+  .container .shadowDrop {
+    display: none;
+  }
+  .container .additional {
+    display: flex;
+    width: 100%;
+    padding: 16px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #e5e5e5;
+  }
+  .container .mainpage {
+    margin-top: 100px;
+    width: 100%;
+    padding: 0 0;
+  }
+  .container .mainpage .user {
+    display: none;
+  }
+  .container .mainpage .addbook {
+    padding: 0 13px;
+  }
+  .container .mainpage .addbook h2 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 196.19%;
+  }
+  .container .mainpage .addbook .searchbook h4 {
+    margin-bottom: 29px;
+  }
+  .container .mainpage .book-form {
+    margin-top: 81px;
+  }
+  .container .mainpage .book-form h2 {
+    padding: 0 15px;
+  }
+  .container .mainpage .book-form .add {
+    border-radius: 0;
+    padding: 10px 15px 30px 15px;
+  }
+  .container .mainpage .about-store {
+    margin-top: 149px;
+  }
+  .container .mainpage .about-store h2 {
+    padding: 0 15px;
+  }
+  .container .mainpage .about-store .about-form {
+    border-radius: 0;
+    padding: 10px 15px 30px 15px;
+  }
+  .container .mainpage .join-us {
+    width: 100%;
+  }
+  .container .mainpage .contact-us {
+    width: 100%;
+  }
+}
+@media (min-width: 601px) and (max-width: 800px) {
+  .container .dropmenu {
+    width: 40%;
+  }
+  .container .dropmenu .left {
+    padding: 15px;
+    padding-top: 25px;
+  }
+  .container .shadowDrop {
+    width: 40%;
+  }
+  .container .mainpage {
+    padding-right: 30px;
+    padding-left: 0;
+    overflow-y: scroll;
+  }
+  .container .mainpage .join-us {
+    width: 90%;
+  }
+  .container .mainpage .contact-us {
+    overflow-x: scroll;
+    width: 90%;
+  }
+}/*# sourceMappingURL=style.css.map */

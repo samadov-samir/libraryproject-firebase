@@ -1,0 +1,474 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.container {
+  background: #e5e5e5;
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  display: flex;
+  .dropmenu {
+    
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    min-width: 205px;
+    width: 30%;
+    min-height: 100vh;
+    color: white;
+    transition: all 1s !important;
+
+    opacity: 1;
+    visibility: visible;
+    .left {
+      padding: 35px;
+      background: #720418;
+
+      width: 80%;
+      .head {
+        display: flex;
+        margin: auto;
+        width: 100%;
+        .space {
+          display: none;
+        }
+        .info-img {
+          display: flex;
+        }
+        .info {
+          margin-left: 8px;
+          width: 100%;
+          .name {
+            font-weight: 900;
+            font-size: 14px;
+            line-height: 17px;
+          }
+          p {
+            font-weight: 400;
+            font-size: 13px;
+          }
+          hr {
+            width: 100%;
+            margin: 5px;
+            margin-left: 0;
+          }
+        }
+        .img {
+          width: 67px;
+          img {
+            width: 100%;
+          }
+        }
+      }
+      .foot {
+        margin-top: 25px;
+        a {
+          text-decoration: none;
+          color: white;
+          cursor: none;
+        }
+        ul {
+          list-style-type: none;
+          li {
+            display: flex;
+            align-items: center;
+            padding: 22px 0;
+            padding-left: 22px;
+            border-radius: 50px;
+            transition: background-color 0.8s;
+
+            cursor: pointer;
+            img {
+              width: 32px;
+            }
+            span {
+              margin-left: 12px;
+            }
+            &:hover {
+              background-color: #48020f;
+            }
+          }
+        }
+      }
+    }
+    .rightt {
+      display: none;
+      opacity: 1;
+
+      height: 100vh;
+      width: 20%;
+      background: rgb(84, 47, 2);
+    }
+  }
+  .shadowDrop {
+    min-width: 205px;
+    width: 30%;
+    min-height: 100vh;
+    transition: all 1s !important;
+  }
+  
+  .additional {
+    display: none;
+    .head {
+      display: flex;
+      margin: auto;
+      width: 50%;
+      color: #720418;
+      .info {
+        margin-left: 8px;
+        width: 100%;
+        .name {
+          font-weight: 900;
+          font-size: 14px;
+          line-height: 17px;
+        }
+        p {
+          font-weight: 400;
+          font-size: 13px;
+        }
+        hr {
+          width: 100%;
+          margin: 5px;
+          margin-left: 0;
+        }
+      }
+      .img {
+        width: 67px;
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .right {
+      width: 50%;
+      text-align: right;
+      i {
+        font-size: 30px;
+      }
+    }
+  }
+  .mainpage {
+    width: 75%;
+    padding: 0 58px;
+    .user {
+      margin-top: 48px;
+      text-align: right;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      position: relative;
+      right: 0;
+      .img {
+        width: 17px;
+        img {
+          width: 100%;
+        }
+      }
+      p {
+        font-size: 14px;
+        margin-left: 5px;
+      }
+    }
+    .addbook {
+      h2 {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 196.19%;
+      }
+      .searchbook {
+        margin-top: 26px;
+        .inputSearch {
+          display: flex;
+          margin-top: 10px;
+          input {
+            background: #ffffff;
+            border: 2px solid rgba(57, 31, 0, 0.48);
+            border-radius: 34px;
+            max-width: 395px;
+            width: 80%;
+            height: 41px;
+            padding-left: 33px;
+          }
+          .search {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 12px 24px;
+            width: 63px;
+            height: 40px;
+            margin-left: 10px;
+            outline: none;
+            border: none;
+            background: #ff8b00;
+            border-radius: 34px;
+            transition: opacity .5s;
+            cursor: pointer;
+           &:hover{
+            opacity: 0.7;
+           }
+            img {
+              
+
+              width: 63px;
+              height: 100%;
+            }
+          }
+        }
+        .history {
+          margin-top: 6px;
+          background: #f1f0f0;
+          border-radius: 35px;
+          max-width: 395px;
+          width: 80%;
+          padding: 20px;
+          max-height: 200px;
+          overflow-y: scroll;
+          
+          p {
+            cursor: pointer;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            img {
+              width: 15px;
+              height: 15px;
+            }
+            span {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 25px;
+              color: #bcbcbc;
+              margin-left: 24px;
+            }
+          }
+        }
+      }
+    }
+    .book-form {
+      margin-top: 81px;
+      h2 {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 196.19%;
+      }
+      .add {
+        padding: 16px 30px 30px;
+        gap: 24px;
+        background: #ffffff;
+        border-radius: 20px;
+        margin-top: 18px;
+        .inputsection {
+          display: flex;
+          flex-direction: column;
+          margin-top: 24px;
+          label {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            margin-bottom: 10px;
+          }
+          input {
+            padding: 8px 12px;
+            height: 40px;
+
+            background: #ffffff;
+            border: 1px solid #e2e6ee;
+            box-shadow: 0px 4px 18px rgba(158, 168, 189, 0.31);
+            border-radius: 10px;
+          }
+        }
+        .description {
+          input {
+            height: 89px;
+          }
+        }
+        .addBtn {
+          width: 100%;
+          background: #ff8b00;
+          border-radius: 10px;
+          height: 40px;
+          border: 0;
+          margin-top: 24px;
+          color: white;
+          cursor: pointer;
+          transition: opacity .5s;
+
+          &:hover{
+            opacity: 0.7;
+           }
+        }
+      }
+    }
+    .about-store {
+      margin-top: 167px;
+      h2 {
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 196.19%;
+      }
+      .about-form {
+        padding: 16px 30px 30px;
+        gap: 24px;
+        background: #ffffff;
+        border-radius: 20px;
+        margin-top: 18px;
+        .inputsection {
+          display: flex;
+          flex-direction: column;
+          margin-top: 24px;
+          label {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            margin-bottom: 10px;
+          }
+          input {
+            padding: 8px 12px;
+            height: 40px;
+
+            background: #ffffff;
+            border: 1px solid #e2e6ee;
+            box-shadow: 0px 4px 18px rgba(158, 168, 189, 0.31);
+            border-radius: 10px;
+          }
+        }
+        .description {
+          input {
+            height: 89px;
+          }
+        }
+        .addBtn {
+          width: 100%;
+          background: #ff8b00;
+          border-radius: 10px;
+          height: 40px;
+          border: 0;
+          margin-top: 24px;
+          color: white;
+          cursor: pointer;
+          transition: opacity .5s;
+          &:hover{
+            opacity: 0.7;
+           }
+        }
+      }
+    }
+    .join-us {
+      width: 60%;
+      margin-top: 167px;
+      h2 {
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 196.19%;
+      }
+
+      .join-us-table {
+        margin-bottom: 200px;
+        font-family: arial, sans-serif;
+        width: 100%;
+        border: 0;
+        thead {
+          background-color: #720418;
+          color: #f2f2f2;
+          border: 0;
+
+          tr {
+            th {
+              font-weight: 200 !important;
+              font-family: "Nunito Sans";
+              font-style: normal;
+              font-size: 14px;
+              line-height: 115%;
+            }
+          }
+        }
+        tbody {
+          font-family: "Nunito Sans";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 115%;
+          tr {
+            &:nth-child(odd) {
+              background-color: #f9fafc;
+            }
+          }
+        }
+
+        td,
+        th {
+          text-align: left;
+          padding: 8px;
+        }
+      }
+    }
+    .contact-us {
+      width: 100%;
+      margin-top: 167px;
+      overflow-x: scroll;
+
+      h2 {
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 196.19%;
+      }
+
+      .contact-us-table {
+        margin-bottom: 200px;
+        font-family: arial, sans-serif;
+        width: 100%;
+        border: 0;
+        overflow-x: scroll;
+
+        thead {
+          background-color: #720418;
+          color: #f2f2f2;
+          border: 0;
+
+          tr {
+            th {
+              font-weight: 200 !important;
+              font-family: "Nunito Sans";
+              font-style: normal;
+              font-size: 14px;
+              line-height: 115%;
+            }
+          }
+        }
+        tbody {
+          font-family: "Nunito Sans";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 115%;
+          tr {
+            &:nth-child(odd) {
+              background-color: #f9fafc;
+            }
+          }
+        }
+
+        td,
+        th {
+          text-align: left;
+          padding: 8px;
+        }
+      }
+    }
+  }
+  
+}
+@import "_responsive";

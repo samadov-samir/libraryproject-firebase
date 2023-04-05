@@ -1,0 +1,51 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+main {
+  margin-bottom: 100px;
+}
+.search-title {
+  margin-bottom: 28px;
+}
+#fullNameContact,
+#addressContact,
+#emailContact,
+#phoneContact {
+  height: 75px;
+  margin-bottom: 34px;
+}
+#contactBtn {
+  height: 75px;
+  background: #e16a00;
+  color: #fff;
+  width: 95%;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.requestCall:hover {
+  border: 1px solid #e16a00;
+  color: #e16a00;
+}
+@media (max-width: 768px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  body {
+    width: 100%;
+  }
+  footer {
+    width: 100%;
+  }
+  .list-unstyled {
+    display: none;
+  }
+}

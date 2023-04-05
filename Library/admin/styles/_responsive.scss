@@ -1,0 +1,136 @@
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    .dropmenu {
+      z-index: 1000;
+
+      visibility: hidden;
+      height: 0;
+      width: 0px;
+      position: fixed;
+      left: 0;
+      top: 0;
+      opacity: 0;
+      .left {
+        z-index: 1000;
+
+        .head {
+          .space {
+            display: block;
+          }
+        }
+      }
+      .rightt {
+        display: block;
+      }
+      .head {
+        display: flex;
+        align-items: center;
+        .space {
+          display: block;
+
+          margin-left: auto;
+          i {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+    .hambmin {
+      width: 100% !important;
+      height: 100vh !important;
+      visibility: visible !important;
+      transition: all 1s !important;
+      opacity: 1 !important;
+      z-index: 1000;
+    }
+    .shadowDrop{
+      display: none;
+    }
+    .additional {
+      display: flex;
+      width: 100%;
+      padding: 16px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color:#e5e5e5 ;
+    }
+    .mainpage {
+    margin-top: 100px;
+
+      width: 100%;
+      padding: 0 0;
+      .user {
+        display: none;
+      }
+      .addbook {
+        padding: 0 13px;
+        h2 {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 25px;
+          line-height: 196.19%;
+        }
+        .searchbook {
+          h4 {
+            margin-bottom: 29px;
+          }
+        }
+      }
+      .book-form {
+        margin-top: 81px;
+        h2 {
+          padding: 0 15px;
+        }
+        .add {
+          border-radius: 0;
+          padding: 10px 15px 30px 15px;
+        }
+      }
+      .about-store {
+        margin-top: 149px;
+        h2 {
+          padding: 0 15px;
+        }
+        .about-form {
+          border-radius: 0;
+          padding: 10px 15px 30px 15px;
+        }
+      }
+      .join-us {
+        width: 100%;
+      }
+      .contact-us {
+        width: 100%;
+      }
+    }
+  }
+}
+@media (min-width: 601px) and (max-width: 800px) {
+  .container {
+    .dropmenu {
+      width: 40%;
+      .left {
+        padding: 15px;
+        padding-top: 25px;
+      }
+    }
+    .shadowDrop{
+      width: 40%;
+    }
+    .mainpage {
+      padding-right: 30px;
+      padding-left: 0;
+      .join-us {
+        width: 90%;
+      }
+      .contact-us {
+        overflow-x: scroll;
+        width: 90%;
+      }
+      overflow-y: scroll;
+    }
+  }
+}
